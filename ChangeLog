@@ -1,0 +1,59 @@
+2004-04-15  Kensuke Matsuzaki  <zakki@peppermint.jp>
+
+	* src/Window.cc: Update Windows window icon when X windos icon
+	change.
+
+2004-04-13  Kensuke Matsuzaki  <zakki@peppermint.jp>
+
+	* src/Window.cc: Fix maximize and restore. Put new window to
+	foreground.
+
+2004-04-10  Harold L Hunt II
+	* configure.in: Remove extraneous "p".
+
+	* src/Makefile.am: Make "make dist" work when srcdir != builddir.
+
+	* configure.in, configure.ac: Rename configure.in to configure.ac.
+
+2004-04-10  Kensuke Matsuzaki  <zakki@peppermint.jp>
+
+	* src/Window.cc: ifdef out debug message
+
+2004-04-09  Kensuke Matsuzaki  <zakki@peppermint.jp>
+
+	* src/Window.cc: Fix restacking and moving window problem.
+
+	* src/Screen.cc: Fix restacking window problem.
+
+2004-01-28  Kensuke Matsuzaki  <zakki@peppermint.jp>
+
+	* src/blackbox.cc.in: Fix error when debug build.
+	* src/Window.cc: Fix error when debug build.
+
+2004-01-19  Kensuke Matsuzaki  <zakki@peppermint.jp>
+
+	* src/Window.cc: Fix and implement Gravity.  X Server must be
+	updated.
+
+2004-01-16  Kensuke Matsuzaki  <zakki@peppermint.jp>
+
+	* src/Window.cc: direct call ShowWindow
+
+2004-01-06  Kensuke Matsuzaki  <zakki@peppermint.jp>
+
+	* Window.cc, Screen.cc, blackbox.cc.in : improve
+	minimize(iconify)/restore handling.
+
+2003-12-29  Kensuke Matsuzaki  <zakki@peppermint.jp>
+
+	* Delete code related stick and shade.
+
+	* confiqure.in: Enable shape extention.
+
+Changes from blackbox to hackedbox:
+  - added two configure options "--enable-bg-utils and --enable-bloat"
+  - Made all the neccesary hacks to make it "hackedbox" :-)
+	
+Changes from hackedbox to hackedbox for win:
+  - deleted window decoration and menu
+  - add Windows rootless window management extension
