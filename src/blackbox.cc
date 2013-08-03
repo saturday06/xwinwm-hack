@@ -1024,7 +1024,8 @@ void Blackbox::load_rc(void) {
 
 void Blackbox::load_rc(BScreen *screen) {
   screen->saveFullMax(False);
-  screen->saveFocusNew(False);
+  //screen->saveFocusNew(False);
+  screen->saveFocusNew(True);
   screen->saveFocusLast(False);
   screen->saveAllowScrollLock(False);
   screen->saveRowPlacementDirection(BScreen::LeftRight);
