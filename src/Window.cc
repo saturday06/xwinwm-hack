@@ -62,8 +62,9 @@ extern "C" {
 /* Fixups to prevent collisions between Windows and X headers */
 #undef MINSHORT
 #undef MAXSHORT
-#define BOOL WIN_BOOL
 #define INT32 WIN_INT32
+#define INT64 WIN_INT64
+#undef LONG64
 
 /* Flags for Windows header options */
 #define NONAMELESSUNION
@@ -71,6 +72,7 @@ extern "C" {
 #define WIN32_LEAN_AND_MEAN
 #endif
 
+#define _NO_BOOL_TYPEDEF
 #include <windows.h>
 
 
